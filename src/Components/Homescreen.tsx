@@ -12,7 +12,10 @@ const Homescreen = () => {
     <div>
         <Hero />
         {/* <Solutions /> */}
-        {/* <Join /> */}
+      {/* <Join /> */}
+      <br />
+      <br />
+      <br />
         <Team />
         <Career />
         {/* <Footer /> */}

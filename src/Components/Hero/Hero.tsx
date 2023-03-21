@@ -275,6 +275,10 @@ const Top = styled.div`
       text-align: center;
       font-size: 32px;
     }
+    @media screen and (max-width: 375px) {
+      text-align: center;
+      font-size: 27px;
+    }
   }
 `
 const Left = styled.div`
