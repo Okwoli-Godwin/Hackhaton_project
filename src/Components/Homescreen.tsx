@@ -15,7 +15,6 @@ const Homescreen = () => {
       {/* <Join /> */}
       <br />
       <br />
-      <br />
         <Team />
         <Career />
         {/* <Footer /> */}

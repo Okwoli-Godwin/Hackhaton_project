@@ -144,7 +144,7 @@ const Team = () => {
       <Container>
           <Wrapper>
               <Left>
-                  <Top><h1>Connecting all your banking business needs.</h1></Top>
+                  <Top><h1>Connecting all your business banking needs.</h1></Top>
                   <P><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis excepturi dolore quibusdam aspernatur, libero voluptate facere dolores laborum delectus esse itaque?</p></P>
                   <Payment>
                       <Img2 src={img2} />
@@ -183,6 +183,12 @@ const Right = styled.div`
     width: 48%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
 `
 const Up = styled.div`
     h3{
@@ -199,14 +205,16 @@ const Second = styled.div`
         margin: 0;
         line-height: 25px;
         margin-top: 5px;
+        font-size: 15px;
     }
 `
 const Img2 = styled.img`
-    
+    @media screen and (max-width: 320px) {
+        height: 50px;
+    }
 `
 const Payment = styled.div`
     display: flex;
-    align-items: center;
     margin-top: 40px;
 `
 const P = styled.div`
@@ -218,20 +226,36 @@ const P = styled.div`
 const Top = styled.div`
     h1{
         color: #00214F;
+        @media screen and (max-width: 425px) {
+            font-size: 26px;
+        }
+         @media screen and (max-width: 375px) {
+            font-size: 22px;
+        }
     }
 `
 const Img = styled.img`
     height: 650px;
+    @media screen and (max-width: 425px) {
+        height: 400px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 350px;
+    }
 `
 const Left = styled.div`
     width: 48%;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 425px) {
+        width: 100%;
+    }
 `
 const Wrapper = styled.div`
     width: 92%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 `
 
 const Container = styled.div`
