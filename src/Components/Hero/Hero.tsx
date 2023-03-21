@@ -170,7 +170,7 @@ const Buttonhold = styled.div`
 `
 const Image = styled.img`
   @media screen and (max-width: 425px) {
-    height: 400px;
+    height: 450px;
   }
 `
 const Right = styled.div`
@@ -230,6 +230,9 @@ const Down = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-around;
+  }
+  @media screen and (max-width: 425px) {
+    display: none;
   }
 `
 const Button = styled.button`
