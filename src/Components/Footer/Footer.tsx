@@ -20,13 +20,13 @@ const Footer = () => {
 
 export default Footer
 const Tems = styled.div`
-    color: #42526e;
+    color: #fff;
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
 `
 const Insu = styled.div`
-    color: #42526e;
+    color: #fff;
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
@@ -55,7 +55,7 @@ const Logo = styled.div`
     margin-left: 90px;
 `
 const Copy = styled.div`
-    color: #42526e;
+    color: #fff;
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
@@ -151,7 +151,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    background-color: #F4F5F7;
+    background-color: #005AD9;
     padding-top: 50px;
     overflow: hidden;
     hr{
