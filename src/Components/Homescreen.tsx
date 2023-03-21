@@ -24,7 +24,7 @@ const Homescreen = () => {
       <br />
       <br />
       <br />
-      <Designed />
+      {/* <Designed /> */}
         <Footer />
     </div>
   )

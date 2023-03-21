@@ -189,6 +189,12 @@ const Right = styled.div`
         justify-content: center;
         margin-top: 35px;
     }
+    @media screen and (max-width: 768px) {
+         width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
 `
 const Up = styled.div`
     h3{
@@ -212,6 +218,9 @@ const Img2 = styled.img`
     @media screen and (max-width: 320px) {
         height: 50px;
     }
+    @media screen and (max-width: 500px) {
+        height: 50px;
+    }
 `
 const Payment = styled.div`
     display: flex;
@@ -226,6 +235,7 @@ const P = styled.div`
 const Top = styled.div`
     h1{
         color: #00214F;
+        text-align: center;
         @media screen and (max-width: 425px) {
             font-size: 26px;
         }
@@ -236,6 +246,9 @@ const Top = styled.div`
 `
 const Img = styled.img`
     height: 650px;
+    @media screen and (max-width: 768px) {
+        height: 390px;
+    }
     @media screen and (max-width: 425px) {
         height: 400px;
     }
@@ -248,6 +261,9 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 425px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 `

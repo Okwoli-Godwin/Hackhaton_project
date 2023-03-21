@@ -265,6 +265,9 @@ const Card = styled.div`
 	padding: 15px;
 	margin-left: 12px;
 	margin-bottom: 12px;
+	@media screen and (max-width: 500px) {
+		width: 310px;
+	}
 	@media screen and (max-width: 375px) {
 		width: 300px;
 	}
@@ -279,6 +282,9 @@ const Card = styled.div`
 		@media screen and (max-width: 375px) {
 			width: 280px;
 		}
+		@media screen and (max-width: 500px) {
+			width: 290px;
+		}
 		@media screen and (max-width: 320px) {
 		width: 250px;
 	}
@@ -290,6 +296,14 @@ const Cardhold = styled.div`
     display: flex;
     flex-wrap: wrap;
 	margin-top: 25px;
+	@media screen and (max-width: 768px) {
+		display: flex;
+		justify-content: center;
+	}
+	@media screen and (max-width: 508px) {
+		display: flex;
+		justify-content: center;
+	}
 `
 const P = styled.div`
 	width: 450px;
@@ -315,6 +329,10 @@ const Top = styled.div`
 			font-size: 27px;
 			text-align: center;
 		}
+		@media screen and (max-width: 500px) {
+			font-size: 27px;
+			text-align: center;
+		}
 	}
 `
 const Wrapper = styled.div`
@@ -323,6 +341,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+
 `
 
 const Container = styled.div`

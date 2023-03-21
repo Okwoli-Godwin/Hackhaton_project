@@ -24,12 +24,20 @@ const Tems = styled.div`
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
+    @media screen and (max-width: 500px) {
+        margin-left: 0;
+    }
 `
 const Insu = styled.div`
     color: #fff;
     display: flex;
     margin-top: 20px;
+    text-align: center;
     margin-left: 50px;
+    @media screen and (max-width: 500px) {
+        margin: 0;
+        width: 300px;
+    }
 `
 const Four = styled.div`
     color: #016699;
@@ -59,6 +67,11 @@ const Copy = styled.div`
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
 `
 
 const Icons = styled.div`
