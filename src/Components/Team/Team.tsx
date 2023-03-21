@@ -136,6 +136,8 @@ import React from 'react'
 import styled from 'styled-components'
 import img from "../Assets/connect2.png"
 import img2 from "../Assets/payment.png"
+import img3 from "../Assets/growth.png"
+import img4 from "../Assets/connect.png"
 
 const Team = () => {
   return (
@@ -146,20 +148,66 @@ const Team = () => {
                   <P><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis excepturi dolore quibusdam aspernatur, libero voluptate facere dolores laborum delectus esse itaque?</p></P>
                   <Payment>
                       <Img2 src={img2} />
+                      <Second>
+                          <Up><h3>Payment Solution</h3></Up>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur libero delectus repellendus eum deleniti?</p>
+                      </Second>
+                  </Payment>
+
+                  <Payment>
+                      <Img2 src={img3} />
+                      <Second>
+                          <Up><h3>Business Growth</h3></Up>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur libero delectus repellendus eum deleniti?</p>
+                      </Second>
+                  </Payment>
+
+                  <Payment>
+                      <Img2 src={img4} />
+                      <Second>
+                          <Up><h3>Connected People</h3></Up>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur libero delectus repellendus eum deleniti?</p>
+                      </Second>
                   </Payment>
               </Left>
+              <Right>
+                  <Img src={img} />
+              </Right>
           </Wrapper>
     </Container>
   )
 }
 
 export default Team
+const Right = styled.div`
+    width: 48%;
+    display: flex;
+    justify-content: center;
+`
+const Up = styled.div`
+    h3{
+        color: #00214f;
+        font-weight: 700;
+        margin: 0;
+    }
+`
+const Second = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    p{
+        margin: 0;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+`
 const Img2 = styled.img`
     
 `
 const Payment = styled.div`
     display: flex;
     align-items: center;
+    margin-top: 40px;
 `
 const P = styled.div`
     p{
@@ -173,7 +221,7 @@ const Top = styled.div`
     }
 `
 const Img = styled.img`
-    
+    height: 650px;
 `
 const Left = styled.div`
     width: 48%;
@@ -183,6 +231,7 @@ const Left = styled.div`
 const Wrapper = styled.div`
     width: 92%;
     display: flex;
+    justify-content: space-between;
 `
 
 const Container = styled.div`
