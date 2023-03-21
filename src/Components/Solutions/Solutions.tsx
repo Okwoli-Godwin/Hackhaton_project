@@ -331,4 +331,5 @@ const Container = styled.div`
 	justify-content: center;
 	background-color: #005AD9;
 	padding-top: 30px;
+	padding-bottom: 20px;
 `

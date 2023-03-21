@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Designed from './Designed/Designed'
 import Footer from './Footer/Footer'
 import Hero from './Hero/Hero'
 import Join from './Join/Join'
@@ -19,8 +20,11 @@ const Homescreen = () => {
       <br />
       <br />
       <br />
-        <Solutions />
-        {/* <Footer /> */}
+      <Solutions />
+      <br />
+      <br />
+      <br />
+        <Footer />
     </div>
   )
 }

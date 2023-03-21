@@ -9,74 +9,28 @@ import {TiSocialYoutubeCircular} from "react-icons/ti"
 const Footer = () => {
   return (
     <Container>
-        <Wrapper>
-            <First>
-                <Images src={images} />
-            </First>
-            <Second1>
-                <Top>PRODUCTS</Top>
-                <Navs>Jira Software</Navs>
-                <Nav2>Jira Align</Nav2>
-                <Nav2>Jira Service Management</Nav2>
-                <Nav2>Confluence</Nav2>
-                <Nav2>Trello</Nav2>
-                <Nav2>Bitbucket</Nav2>
-                <Nav3>View all products</Nav3>
-            </Second1>
-            <Second>
-                <Top>RESOURCES</Top>
-                <Navs>Technical Support</Navs>
-                <Nav2>Purchasing & licensing</Nav2>
-                <Nav2>Atlassian Community</Nav2>
-                <Nav2>Knowledge base</Nav2>
-                <Nav2>Marketplace</Nav2>
-                <Nav2>My Account</Nav2>
-                <Nav3>Create support ticket</Nav3>
-            </Second>
-            <Second>
-                <Top>EXPAND & LEARN</Top>
-                <Navs>Partners</Navs>
-                <Nav2>Training & Certification</Nav2>
-                <Nav2>Documentation</Nav2>
-                <Nav2>Developer Resources</Nav2>
-                <Nav2>Enterprise services</Nav2>
-                <Nav3>View all resources</Nav3>
-            </Second>
-            <Second>
-                <Top>ABOUT ATLASSIAN</Top>
-                <Navs>Company</Navs>
-                <Nav2>Careers</Nav2>
-                <Nav2>Events</Nav2>
-                <Nav2>Blogs</Nav2>
-                <Nav2>Investor Relations</Nav2>
-                <Nav2>Trust & Security</Nav2>
-                <Nav3>Contact us</Nav3>
-            </Second>
-        </Wrapper>
-        <hr />
         <Last>
-            <Wrap>
-                <Beg>
-                    <Eng><Icons><BsGlobe /></Icons>English<Icons><RiArrowDownSFill /></Icons></Eng>
-                    <Eng>Privacy policy</Eng>
-                    <Eng>Terms</Eng>
-                    <Eng>Modern Slavery Act</Eng>
-                    <Eng>Impressum</Eng>
-                </Beg>
-                <Copy>Copyright © 2022 Atlassian</Copy>
-                <Logo>
-                    <One><GrFacebook /></One>
-                    <Two><BsTwitter /></Two>
-                    <Three><BsLinkedin /></Three>
-                    <Four><TiSocialYoutubeCircular /></Four>
-                </Logo>
-            </Wrap>
+              <Copy>Copyright © 2022 EasyPay</Copy>
+              <Insu>Insurance offered through OnPay Insurance Agency, LLC (CA License #0L29422)</Insu>
+              <Tems>Terms and Conditions | Privacy | Sitemap</Tems>
         </Last>
     </Container>
   )
 }
 
 export default Footer
+const Tems = styled.div`
+    color: #42526e;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+`
+const Insu = styled.div`
+    color: #42526e;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+`
 const Four = styled.div`
     color: #016699;
     font-size: 35px;
@@ -133,6 +87,8 @@ const Last = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 `
 const Nav3 = styled.div`
    color: #0052cc;
@@ -194,6 +150,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
     background-color: #F4F5F7;
     padding-top: 50px;
     overflow: hidden;
