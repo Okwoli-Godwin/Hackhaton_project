@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       {scroll ? (
-        <Container bd="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px">
+        <Container bd="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" bg="#fff">
       <Wrapper>
         {/* <LogoDiv src="/image/ttlogo.png" alt="" /> */}
 
@@ -61,7 +61,7 @@ const Header = () => {
       </Wrapper>
     </Container>
       ) : (
-          <Container bd = "">
+          <Container bd = "" bg = "#005AD9">
       <Wrapper>
         {/* <LogoDiv src="/image/ttlogo.png" alt="" /> */}
 
@@ -98,20 +98,21 @@ const Header = () => {
 
 export default Header;
 
-const Container = styled.div<{bd: string}>`
+const Container = styled.div<{ bd: string; bg: string}>`
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   z-index: 1234;
   position: fixed;
-  background-color: #fff;
+  background-color: ${(props) => props.bg};
   box-shadow: ${(props) => props.bd};
   align-items: center;
   font-family: Montserrat;
+  transition: all 350ms ease-in-out;;
 `;
 const Wrapper = styled.div`
-  width: 85%;
+  width: 92%;
   display: flex;
   justify-content: space-between;
   align-items: center;
